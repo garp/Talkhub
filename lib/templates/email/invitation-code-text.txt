@@ -1,0 +1,15 @@
+Your Invitation Code - TalkHub
+
+Hi {{fullName}},
+
+Great news! Your invitation request has been received. Use the code below to sign up on TalkHub:
+
+Your invite code: {{inviteCode}}
+
+Enter this code during sign-up when prompted for an invite code.
+
+Welcome to TalkHub — we're excited to have you!
+
+---
+This is an automated message, please do not reply.
+© {{currentYear}} TalkHub. All rights reserved.

@@ -1,0 +1,166 @@
+[
+  {
+    "_id": {
+      "$oid": "66f000000000000000000001"
+    },
+    "key": "SUPER_ADMIN",
+    "name": "Super Admin",
+    "level": 5,
+    "scope": "global",
+    "inherits": [
+      "MASTER",
+      "MODERATOR",
+      "MEMBER",
+      "GUEST"
+    ],
+    "details": [
+      "Oversees all the #hashtags",
+      "Has all the roles of Master(s)"
+    ],
+    "permissions": [
+      "hashtags:oversee_all",
+      "hashtag:open_close",
+      "hashtag:owner",
+      "hashtag:rules_manage",
+      "hashtag:welcome_manage",
+      "members:welcome",
+      "members:invite",
+      "members:dismiss",
+      "users:block",
+      "users:report",
+      "chat:chit_chat",
+      "chat:broadcast_send",
+      "guests:view_chat"
+    ],
+    "isActive": true
+  },
+  {
+    "_id": {
+      "$oid": "66f000000000000000000002"
+    },
+    "key": "MASTER",
+    "name": "Master",
+    "level": 4,
+    "scope": "hashtag",
+    "inherits": [
+      "MODERATOR",
+      "MEMBER",
+      "GUEST"
+    ],
+    "details": [
+      "Opens & Closes #hashtag(s)",
+      "Owner of a #hashtag(s)",
+      "Determines the Rules",
+      "Introduces the Welcome",
+      "Has all the roles of Moderator"
+    ],
+    "permissions": [
+      "hashtag:open_close",
+      "hashtag:owner",
+      "hashtag:rules_manage",
+      "hashtag:welcome_manage",
+      "members:welcome",
+      "members:invite",
+      "members:dismiss",
+      "users:block",
+      "users:report",
+      "chat:chit_chat",
+      "chat:broadcast_send",
+      "guests:view_chat"
+    ],
+    "isActive": true
+  },
+  {
+    "_id": {
+      "$oid": "66f000000000000000000003"
+    },
+    "key": "MODERATOR",
+    "name": "Moderator",
+    "level": 3,
+    "scope": "hashtag",
+    "inherits": [
+      "MEMBER",
+      "GUEST"
+    ],
+    "details": [
+      "Moderates #hashtag(s)",
+      "Welcomes Members",
+      "Invites & Dismisses Members",
+      "Blocks @users",
+      "Reports @users",
+      "Has all the roles of a Member"
+    ],
+    "permissions": [
+      "members:welcome",
+      "members:invite",
+      "members:dismiss",
+      "users:block",
+      "users:report",
+      "chat:chit_chat",
+      "chat:broadcast_send",
+      "guests:view_chat"
+    ],
+    "isActive": true
+  },
+  {
+    "_id": {
+      "$oid": "66f000000000000000000004"
+    },
+    "key": "MEMBER",
+    "name": "Member",
+    "level": 2,
+    "scope": "hashtag",
+    "inherits": [
+      "GUEST"
+    ],
+    "details": [
+      "Can chit & chat",
+      "Invite Guests to be Members",
+      "Report @users",
+      "Has all the roles of a Guest"
+    ],
+    "permissions": [
+      "chat:chit_chat",
+      "guests:invite_to_member",
+      "users:report",
+      "guests:view_chat"
+    ],
+    "isActive": true
+  },
+  {
+    "_id": {
+      "$oid": "66f000000000000000000005"
+    },
+    "key": "GUEST",
+    "name": "Guest",
+    "level": 1,
+    "scope": "hashtag",
+    "inherits": [
+      "GAZER"
+    ],
+    "details": [
+      "Can view chit & chat",
+      "Can be Members by Invite"
+    ],
+    "permissions": [
+      "guests:view_chat"
+    ],
+    "isActive": true
+  },
+  {
+    "_id": {
+      "$oid": "66f000000000000000000006"
+    },
+    "key": "GAZER",
+    "name": "Gazer",
+    "level": 0,
+    "scope": "hashtag",
+    "inherits": [],
+    "details": [
+      "Lowest role (below Guest)",
+      "No chat privileges by default"
+    ],
+    "permissions": [],
+    "isActive": true
+  }
+]

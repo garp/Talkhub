@@ -1,0 +1,17 @@
+OTP Verification Code - TalkHub
+
+Hello,
+
+You have requested an OTP for {{purpose}} on your TalkHub account.
+
+Your verification code is: {{otpCode}}
+
+This code will expire in {{expiryMinutes}} minutes.
+
+⚠️ Security Notice: Never share this code with anyone. TalkHub will never ask for your OTP code via phone or email.
+
+If you didn't request this code, please ignore this email or contact our support team.
+
+---
+This is an automated message, please do not reply.
+© {{currentYear}} TalkHub. All rights reserved.

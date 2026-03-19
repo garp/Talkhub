@@ -1,0 +1,43 @@
+# Dependency directories
+node_modules/
+black_icons/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Secrets / Credentials
+lib/configs/serviceAccountKey.json
+
+# Production build output
+/dist
+/build
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Lock files
+package-lock.json
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Serverless directories
+.serverless/
+
+# IDE / Editors
+.vscode/
+.cursor/
+.idea/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
